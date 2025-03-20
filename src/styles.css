@@ -1,0 +1,184 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #444;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: 500;
+}
+
+input {
+  width: 250px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 10px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  margin: 0 5px;
+}
+
+.controls button:hover {
+  background-color: #117a8b;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.allocated {
+  background-color: #4caf50; /* Green for allocated ambulances */
+  color: white;
+}
+
+.waiting {
+  background-color: #f9f9f9; /* Light background for waiting list cards */
+  color: black; /* Black font color for waiting list */
+  border: 1px solid #ddd; /* Add a border for better visibility */
+}
+
+.step-explanation {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-explanation p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.final-sorted-section {
+  margin-bottom: 30px; /* Space between Final Sorted and Allocate Ambulances */
+}
+
+.allocate-section {
+  margin-top: 30px; /* Space above Allocate Ambulances */
+}
+
+.ambulance-allocation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased gap between cards */
+  margin-top: 20px;
+}
+
+.waiting-list-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Equal spacing between cards */
+  margin-top: 20px;
+}
+
+/* Pivot card */
+.pivot {
+  background-color: #dc3545 !important; /* Red for pivot */
+  color: white;
+}
+
+/* Regular cards during sorting */
+.sorting-card {
+  background-color: #add8e6; /* Light blue for other cards */
+  color: black;
+}
+
+/* Final arrangement cards */
+.final-card {
+  color: white; /* White text for better readability */
+}
